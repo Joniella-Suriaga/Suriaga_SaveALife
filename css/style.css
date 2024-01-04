@@ -1,0 +1,499 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+body {
+    background-color:#004d00;
+
+}
+
+header{
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: left;
+    font-family: sans-serif;
+    
+    background-color: #004d00;
+    
+}
+
+nav div{
+    padding: 20px 5px;
+}
+
+nav div a {
+    padding: 15px;
+    text-decoration: none;
+    color: #eeffcc;
+}
+
+nav input {
+
+    float: right;
+    padding: 10px;
+    margin: 12px 0 0 20px;
+
+    width: 200px;
+    height: 30px;
+    vertical-align: middle;
+    
+    border: 5px #784212;
+    
+    font-size: 15px;
+    font-family: monospace;
+}
+
+nav div a:hover{
+    background-color: #eeffcc;
+    color: #004d00;
+}
+
+section.main {
+    display: flex;  
+
+    height: 700px;
+    line-height: 2.0;
+    background-color:#d5e6d5;
+    background-image: linear-gradient(to right, #aebc91, #eeffcc,#aebc91);
+
+    align-content: center;
+    justify-content: center;
+   
+    font-family: sans-serif; 
+}
+
+section.main article:nth-of-type(1) {
+    width: 33%;
+    border: 2px;
+    border-style: solid;
+    border-color: #784212;
+    margin: 25px;
+
+    color: #784212;
+    text-align: center;
+    
+    padding: 15px 20px 0px 20px;
+}
+
+section.main article p:only-child {
+    text-align: justify;
+   text-justify: inter-word;
+}
+
+section.main article:nth-of-type(2) {
+    width: 33%;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    margin: 25px 0px;
+
+    color: black;
+    text-align: center;
+    
+    padding: 15px 20px 0px 20px;
+}
+
+section.main aside {
+    margin: 25px;
+    padding: 25px;
+    width: 20%;
+    background: #0f3e0c;
+    color: rgb(205, 228, 193);
+    
+    text-align: center;
+}
+
+section.main aside p {
+    color: rgb(205, 228, 193);
+    
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+section.main aside a {
+    display: flex;
+    flex-direction: column;
+	text-align: center;
+
+    justify-content: center;
+    font-family: sans-serif;
+
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(205, 228, 193);
+}
+section.main aside a:link { 
+    text-decoration: none; 
+    color: rgb(205, 228, 193);
+  } 
+section.main aside a:visited { 
+    text-decoration: none; 
+    color: rgb(205, 228, 193);
+  } 
+section.main aside a:hover { 
+    text-decoration: none; 
+    color: rgb(54, 97, 32);
+  } 
+section.main aside a:active { 
+    text-decoration: none; 
+    color: rgb(56, 75, 46);
+  }
+
+
+/*----issues page-----*/
+
+#hello {
+    display: flex;
+    justify-content: center;
+    background-color: #eeffcc;
+}
+
+section.issues {
+    width: 900px;
+    line-height: 2.0;
+    color: #004d00;
+    text-align: center;
+    margin: 0% 50px;
+   
+    font-family: sans-serif; 
+}
+
+section.issues article {
+    width: 95%;
+    border: 2px;
+    border-style: solid;
+    border-color: #784212;
+
+    margin: 25px;
+    clear: both;
+    
+    display: flex;
+    
+    padding: 15px 15px;
+}
+
+section.issues article p {
+   text-align: justify;
+   text-justify: inter-word;
+}
+
+.left {
+    float: left;
+    width: 400px;
+    height: 250px;
+
+    padding: 15px 15px;
+    
+}
+
+.right {
+    float: right;
+    width: 400px;
+    height: 250px;
+
+    padding: 15px 15px;
+
+}
+
+/*----how to help page-----*/
+
+section.help {
+    display: flex;  
+
+    line-height: 2.0;
+    color: #2e1e10;
+    background-color:#004d00;
+
+    align-content: center;
+    justify-content: center;
+
+    font-family: sans-serif; 
+    
+}
+
+section.help article {
+    background-color: #b4c391;
+}
+
+section.help article div p {
+    color:#f2e3d6;
+    text-align: center;
+    border: 1px solid #2e1e10;
+    background-color: #2e1e10;
+}
+
+section.help article p {
+    color:#2e1e10;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+section.help article a {
+    display: flex;
+    flex-direction: column;
+
+    text-decoration: none; 
+	text-align: center;
+
+    background-color: #2e1e10;
+
+    justify-content: center;
+    font-family: sans-serif;
+
+    border: 3px;
+    border-style: solid;
+    border-color: #2e1e10;
+    padding: 10px;
+}
+section.help article a:link { 
+    text-decoration: none; 
+    color:#f2e3d6;
+  } 
+section.help article a:visited { 
+    text-decoration: none; 
+    color: #f2e3d6;
+  } 
+section.help article a:hover { 
+    text-decoration: none; 
+    color: rgb(204, 155, 81);
+  } 
+section.help article a:active { 
+    text-decoration: none; 
+    color: rgb(204, 155, 81);
+  }
+
+section.help article:nth-child(1) {
+    width: 33%;
+    border: 4px;
+    border-style: solid;
+    border-color: #2e1e10;
+    margin: 25px;
+
+    text-align: center;
+    
+    padding: 20px;
+}
+
+section.help article:nth-child(2) {
+    width: 33%;
+    border: 4px;
+    border-style: solid;
+    border-color: #2e1e10;
+    margin: 25px;
+
+    text-align: center;
+    
+    padding: 20px;
+}
+
+section.help article:nth-child(3) {
+    width: 33%;
+    border: 4px;
+    border-style: solid;
+    border-color: #2e1e10;
+    margin: 25px;
+
+    text-align: center;
+    
+    padding: 20px;
+}
+
+#vid {
+    border: 5px solid #2e1e10; 
+    margin: 15px;
+
+    align-content: center;
+
+    width: 98%;
+    height: 500px;
+    
+}
+
+
+/*----PURPOSE PAGE-----*/
+
+section.more {
+    display: flex;  
+    background-color: #eeffcc;
+
+    height: 700px;
+    line-height: 2.0;
+
+    align-content: center;
+    justify-content: center;
+   
+    font-family: sans-serif; 
+}
+
+section.more article:nth-of-type(1) {
+    width: 55.5%;
+    border: 5px;
+    border-style: solid;
+    border-color: #004d00;
+    margin: 25px;
+
+    color: #004d00;
+    text-align: center;
+    
+    padding: 25px 20pxs;
+}
+
+section.more article p {
+    padding: 25px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+section.sub {
+    background-color: #eeffcc;
+}
+
+#img {
+    width: 50%; 
+    height: 93%;
+
+    border: 5px;
+    border-style: solid;
+    border-color: #2e1e10;
+    margin: 25px;
+
+    align-content: center;
+
+}
+
+/*----LEARN MORE PAGE-----*/
+
+section.last {
+    display: flex;
+    flex-direction: row;
+
+    background-image: url(../images/img_nature_wide.jpg);
+    background-size: cover;
+    position: scroll;
+
+    width: 100%;
+    height: 100%;
+}
+
+section.last article:nth-of-type(1) {
+    margin: 10px 10%;
+    padding: 20%;
+
+    font-size: 20px; 
+    font-family: Helvetica;
+    height: auto;
+
+    text-align: center;
+    color: white; 
+}
+
+section.last article p {
+    text-align: justify;
+}
+
+section.last article a {
+    display: flex;
+    flex-direction: column;
+	text-align: center;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    font-family: sans-serif;
+
+    border: 2px;
+    border-style: solid;
+    border-color: #004d00;
+    background-color: white;
+}
+section.last article a:link { 
+    text-decoration: none; 
+    color: #2e1e10 ;
+  } 
+section.last article a:visited { 
+    text-decoration: none; 
+    color: #2e1e10;
+  } 
+section.last article a:hover { 
+    text-decoration: none; 
+    color: rgb(54, 97, 32);
+  } 
+section.last article a:active { 
+    text-decoration: none; 
+    color: rgb(56, 75, 46);
+  }
+
+.container {
+    width: 85px;
+    height: 225px;
+    border: 1px solid #004d00;
+    position: absolute;
+    transform: translate(-50%, 13%);
+    left: 50%;
+    top: 50%;
+    background: url(../images/spritesheet.png);
+
+    animation: grow 1s steps(4) infinite;
+}
+
+@keyframes grow {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 334px 0;
+    }
+}
+
+/*----FOOTER-----*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+    
+    background-color: #004d00;
+
+    font-family: monospace;
+    color: white;
+    padding: 15px;
+}
+
+footer a {
+    padding: 5px;
+    text-decoration: none;
+    color: #eeffcc;
+}
+
+footer a:link { 
+    text-decoration: none; 
+  } 
+footer a:visited { 
+    text-decoration: none; 
+    color: rgb(205, 228, 193);
+  } 
+footer a:hover { 
+    text-decoration: none; 
+    color: rgb(54, 97, 32);
+  } 
+footer a:active { 
+    text-decoration: none; 
+    color: rgb(56, 75, 46);
+  }
+
